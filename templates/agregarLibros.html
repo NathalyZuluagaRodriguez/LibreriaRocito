@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>LIBRERIA ROCITO</title>
+  <link rel="website icon" href="../assets/images/icon.jpg">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="logo">
+          <h2 id="tituloL">LIBRERIA</h2>
+          <h2 id="titulo1">ROCITO</h2>
+        </div>
+     </div>
+  </header>
+  <hr>
+  <div class="regresar">
+    <a class="regresarButton" href="../index.html">Regresar</a>
+  </div>    
+    <div class="formulario">
+        <div class="contenedorAgregar">
+          <form id="agregarLibroForm">
+              <h2>Formulario para Agregar Libros</h2>
+              <p>Llene el formulario para agregar un nuevo libro a la librería</p>
+              
+              <label for="nombre">Nombre de quien lo agrega *</label>
+              <input type="text" id="nombre" name="nombre" required>
+              
+              <label for="titulo">Título *</label>
+              <input type="text" id="titulo" name="titulo" required>
+              
+              <label for="autor">Autor *</label>
+              <input type="text" id="autor" name="autor" required>
+              
+              <label for="genero">Género *</label>
+              <input type="text" id="genero" name="genero" required>
+              
+              <label for="idioma">Idioma *</label>
+              <input type="text" id="idioma" name="idioma" required>
+              
+              <label for="precio">Precio *</label>
+              <input type="number" id="precio" name="precio" required>
+              
+              <label for="formato">Formato *</label>
+              <input type="text" id="formato" name="formato" required>
+              
+              <label for="isbn">ISBN *</label>
+              <input type="text" id="isbn" name="isbn" required>
+              
+              <label for="descripcion">Descripción *</label>
+              <textarea id="descripcion" name="descripcion" required></textarea>
+              
+              <label for="estado">Estado *</label>
+              <input type="text" id="estado" name="estado" required>
+              
+              <label for="fecha_publicacion">Fecha de Publicación *</label>
+              <input type="date" id="fecha_publicacion" name="fecha_publicacion" required>
+              
+              <label for="editorial">Editorial *</label>
+              <input type="text" id="editorial" name="editorial" required>
+              
+              <label for="paginas">Número de Páginas *</label>
+              <input type="number" id="paginas" name="paginas" required>
+              
+              <button class="buttonAgregar" type="submit">Agregar Libro</button>
+          </form>
+      </div>
+    </div>
+<div id="listaLibros" class="contenedorLibros">
+    <h2>Libros Agregados</h2>
+    <div id="AgregarLibros"></div>
+</div>
+  <script src="../js/agregarScript.js"></script>
+
+  
+</body>
+</html>
